@@ -1,5 +1,5 @@
 const maxNumber = 25;
-const maxStep = 3;
+const maxStep = 120;
 const firstBox = document.getElementById("first-box");
 const playBtn = document.getElementById("play");
 const expBox = document.getElementById("exp-box");
