@@ -1,0 +1,21 @@
+@font-face {
+	font-family: "iransans";
+	src: url(public/IRANSansWeb\(FaNum\)_Medium.woff2);
+	font-style: normal;
+}
+
+button {
+	font-family: "iransans";
+	font-size: 1.5em;
+	display: block;
+	width: 90%;
+	text-align: center;
+	padding: 20px 10px;
+	margin: 10px auto;
+	background-color: #eb8b1d;
+	color: white;
+	box-shadow: 0 0px 20px #80808070;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+}

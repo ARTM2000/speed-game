@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png" />
+		<link rel="manifest" href="public/site.webmanifest" />
+		<title>چالش سرعت</title>
+	</head>
+	<body style="font-family: iransans">
+		<div
+			style="
+				max-width: 400px;
+				width: 90vw;
+				margin: 100px auto 10px auto;
+				border: 2px dashed gray;
+				border-radius: 10px;
+				padding: 50px 10px;
+			"
+			id="first-box"
+		>
+			<h1 style="text-align: center">🚀 چالش سرعت</h1>
+			<p
+				style="
+					text-align: center;
+					margin: 5px 30px;
+					direction: rtl;
+					font-size: 1.7em;
+				"
+			>
+				در این بازی با انجام محاسبات ساده ریاضی در سرعت بالا خود را به چالش
+				بکشید.
+			</p>
+			<button id="play">بزن بریم</button>
+		</div>
+		<div
+			style="
+				max-width: 400px;
+				width: 90vw;
+				margin: 10px auto;
+				border: 2px dashed gray;
+				border-radius: 10px;
+				padding: 10px;
+			"
+			id="exp-box"
+			hidden
+		>
+			<div
+				style="position: relative; padding: 70px 10px; margin: 90px 0 10px 0"
+			>
+				<div
+					style="
+						font-size: 5em;
+						display: inline-block;
+						position: absolute;
+						top: 14.5%;
+						left: 13%;
+						width: 120px;
+						text-align: center;
+					"
+					id="num1"
+				></div>
+				<div
+					style="
+						font-size: 5em;
+						display: inline-block;
+						position: absolute;
+						top: 13%;
+						left: 44%;
+						right: 44%;
+					"
+					id="symbol"
+				></div>
+				<div
+					style="
+						font-size: 5em;
+						display: inline-block;
+						position: absolute;
+						top: 14.5%;
+						right: 13%;
+						width: 120px;
+						text-align: center;
+					"
+					id="num2"
+				></div>
+			</div>
+			<div style="padding: 0 20px; position: relative">
+				<input
+					type="number"
+					name="result"
+					id="result"
+					style="
+						display: block;
+						width: 50%;
+						margin: 3px auto;
+						padding: 10px;
+						border-radius: 5px;
+						border: 2px solid gray;
+						font-size: 3.5em;
+						text-align: center;
+					"
+				/>
+				<br />
+				<button id="next">بعدی</button>
+			</div>
+		</div>
+		<div
+			style="
+				max-width: 400px;
+				width: 90vw;
+				margin: 170px auto 10px auto;
+				border: 2px dashed gray;
+				border-radius: 10px;
+				padding: 10px;
+			"
+			id="result-box"
+			hidden
+		>
+			<h2 style="text-align: center" id="result-title">نتیجه</h2>
+			<p
+				style="
+					margin: 10px;
+					text-align: center;
+					font-size: 1.5em;
+					font-weight: bolder;
+				"
+				id="game-time"
+			></p>
+			<div
+				style="
+					display: inline-block;
+					width: 38%;
+					margin: 5px 20px;
+					border: none;
+					border-radius: 7px;
+					background-color: #f3eded;
+					padding: 5px;
+					text-align: center;
+					justify-content: center;
+					color: #ef5656;
+					font-weight: bold;
+					font-size: 1.5em;
+				"
+				id="invalid-ans"
+			></div>
+			<div
+				style="
+					display: inline-block;
+					width: 38%;
+					margin: 5px auto;
+					border: none;
+					border-radius: 7px;
+					background-color: #f3eded;
+					padding: 5px;
+					text-align: center;
+					justify-content: center;
+					color: #62ed17;
+					font-weight: bold;
+					font-size: 1.5em;
+				"
+				id="valid-ans"
+			></div>
+			<button id="play-again">دوباره</button>
+		</div>
+	</body>
+	<script src="main.js"></script>
+</html>
